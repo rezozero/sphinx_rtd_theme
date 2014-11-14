@@ -1,0 +1,31 @@
+#rezozero-header
+  position: fixed
+  background: $menu-background-color
+  z-index: 9999
+  width: 100%
+  height: $header-height
+
+  color: #EEE
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+  padding: 0px 15px
+
+  ul
+    display: inline-block
+    margin: 0 20px
+  li
+    display: inline-block
+    color: #EEE
+    padding: 15px 10px
+
+    &.active
+      background: lighten($menu-background-color, 5%)
+
+    a
+      color: #EEE
+
+    .fa-github:before
+      font-size: 25px
+      line-height: 12px

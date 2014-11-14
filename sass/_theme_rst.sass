@@ -57,6 +57,10 @@
       margin-right: 4px
   .note, .seealso
     @extend .wy-alert.wy-alert-info
+    background: lighten($link-color, 50%)
+
+    .admonition-title
+      background: $link-color
   .hint, .tip, .important
     @extend .wy-alert.wy-alert-success
   .error, .danger
