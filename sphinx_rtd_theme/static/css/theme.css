@@ -4084,10 +4084,10 @@ div[class^='highlight'] pre {
   display: block;
   position: relative;
   font-size: 90%;
-  color: #b3b3b3;
+  color: gray;
 }
 .wy-menu-vertical a:hover {
-  background-color: #4e4a4a;
+  background-color: #d6d6d6;
   cursor: pointer;
 }
 .wy-menu-vertical a:active {
@@ -4187,7 +4187,7 @@ div[class^='highlight'] pre {
   width: 300px;
   overflow: hidden;
   min-height: 100%;
-  background: #343131;
+  background: #F2F2F2;
   z-index: 200;
 }
 
@@ -4352,8 +4352,8 @@ nav.stickynav {
   left: 0;
   width: 300px;
   color: #fcfcfc;
-  background: #1f1d1d;
-  border-top: solid 10px #343131;
+  background: #dedede;
+  border-top: solid 10px #F2F2F2;
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
@@ -4366,7 +4366,7 @@ nav.stickynav {
 }
 .rst-versions .rst-current-version {
   padding: 12px;
-  background-color: #272525;
+  background-color: #e5e5e5;
   display: block;
   text-align: right;
   font-size: 90%;
@@ -4413,7 +4413,7 @@ nav.stickynav {
   border: 0;
   margin: 20px 0;
   padding: 0;
-  border-top: solid 1px #413d3d;
+  border-top: solid 1px white;
 }
 .rst-versions .rst-other-versions dd {
   display: inline-block;
