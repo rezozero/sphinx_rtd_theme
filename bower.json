@@ -1,5 +1,5 @@
 {
-  "name": "sphinx-rtd-theme",
+  "name": "roadiz-rtd-theme",
   "version": "1.0",
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
@@ -30,4 +30,3 @@
     "wyrm": "~0.0.x"
   }
 }
-

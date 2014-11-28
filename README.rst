@@ -10,8 +10,10 @@
 .. _hidden: http://sphinx-doc.org/markup/toctree.html
 
 **************************
-Read the Docs Sphinx Theme
+Roadiz Sphinx Theme
 **************************
+
+Forked from *Read the Docs Sphinx Theme*
 
 View a working demo_ over on readthedocs.org_.
 
@@ -34,28 +36,28 @@ Download the package or add it to your ``requirements.txt`` file:
 
 .. code:: bash
 
-    $ pip install sphinx_rtd_theme
+    $ pip install roadiz_rtd_theme
 
 In your ``conf.py`` file:
 
 .. code:: python
 
-    import sphinx_rtd_theme
+    import roadiz_rtd_theme
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "roadiz_rtd_theme"
 
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    html_theme_path = [roadiz_rtd_theme.get_html_theme_path()]
 
 Via git or download
 -------------------
 
-Symlink or subtree the ``sphinx_rtd_theme/sphinx_rtd_theme`` repository into your documentation at
-``docs/_themes/sphinx_rtd_theme`` then add the following two settings to your Sphinx
+Symlink or subtree the ``roadiz_rtd_theme/roadiz_rtd_theme`` repository into your documentation at
+``docs/_themes/roadiz_rtd_theme`` then add the following two settings to your Sphinx
 conf.py file:
 
 .. code:: python
 
-    html_theme = "sphinx_rtd_theme"
+    html_theme = "roadiz_rtd_theme"
     html_theme_path = ["_themes", ]
 
 How the Table of Contents builds
@@ -80,7 +82,7 @@ alltogether change the setting in ``conf.py``.
 Contributing or modifying the theme
 ===================================
 
-The sphinx_rtd_theme is primarily a sass_ project that requires a few other sass libraries. I'm
+The roadiz_rtd_theme is primarily a sass_ project that requires a few other sass libraries. I'm
 using bower_ to manage these dependencies and sass_ to build the css. The good news is
 I have a very nice set of grunt_ operations that will not only load these dependecies, but watch
 for changes, rebuild the sphinx demo docs and build a distributable version of the theme.
@@ -153,7 +155,7 @@ extraneous files. Please do this before you send in a PR.
 Using this theme locally, then building on Read the Docs?
 ==========================================================
 
-Currently if you import sphinx_rtd_theme in your local sphinx build, then pass
+Currently if you import roadiz_rtd_theme in your local sphinx build, then pass
 that same config to Read the Docs, it will fail, since RTD gets confused. If
 you want to run this theme locally and then also have it build on RTD, then
 you can add something like this to your config. Thanks to Daniel Oaks for this.
@@ -164,13 +166,12 @@ you can add something like this to your config. Thanks to Daniel Oaks for this.
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
     if not on_rtd:  # only import and set the theme if we're building docs locally
-        import sphinx_rtd_theme
-        html_theme = 'sphinx_rtd_theme'
-        html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+        import roadiz_rtd_theme
+        html_theme = 'roadiz_rtd_theme'
+        html_theme_path = [roadiz_rtd_theme.get_html_theme_path()]
 
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
 TODO
 ====
 * Separate some sass variables at the theme level so you can overwrite some basic colors.
-
