@@ -103,14 +103,14 @@ ul.fas li .fa-large:before {
   bottom: 0;
   left: 0;
   width: 300px;
-  color: #fcfcfc;
-  background: #dedede;
+  color: #00a4d0;
+  background: #4d4d4d;
   border-top: solid 10px #F2F2F2;
   font-family: "RezoZero", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
 .rst-versions a {
-  color: #00deab;
+  color: #00a4d0;
   text-decoration: none;
 }
 .rst-versions .rst-badge-small {
@@ -118,10 +118,10 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-current-version {
   padding: 12px;
-  background-color: #e5e5e5;
+  background-color: #575757;
   display: block;
   text-align: right;
-  font-size: 90%;
+  font-size: 100%;
   cursor: pointer;
   color: #27AE60;
   *zoom: 1;
@@ -134,7 +134,7 @@ ul.fas li .fa-large:before {
   clear: both;
 }
 .rst-versions .rst-current-version .fa {
-  color: #fcfcfc;
+  color: #00a4d0;
 }
 .rst-versions .rst-current-version .fa-book {
   float: left;
