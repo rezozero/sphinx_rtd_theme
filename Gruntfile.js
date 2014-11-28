@@ -23,7 +23,8 @@ module.exports = function(grunt) {
       fonts: {
         files: [
           // includes files within path
-          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'sphinx_rtd_theme/static/fonts/', filter: 'isFile'}
+          // {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'sphinx_rtd_theme/static/fonts/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['fonts/*'], dest: 'sphinx_rtd_theme/static/fonts/', filter: 'isFile'}
         ]
       }
     },
@@ -73,7 +74,7 @@ module.exports = function(grunt) {
     watch: {
       /* Compile sass changes into theme directory */
       sass: {
-        files: ['sass/*.sass', 'bower_components/**/*.sass'],
+        files: ['sass/**/*.sass', 'bower_components/**/*.sass'],
         tasks: ['sass:dev']
       },
       /* Changes in theme dir rebuild sphinx */
