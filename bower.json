@@ -3,9 +3,10 @@
   "version": "1.0",
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
+    "Julien Blanchet <julien@rezo-zero.com>",
     "Dave Snider <dave.snider@gmail.com>"
   ],
-  "description": "Sphinx theme for readthedocs.org.",
+  "description": "Sphinx theme for docs.roadiz.io.",
   "license": "MIT",
   "main": [
     "dist/**"

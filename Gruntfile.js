@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       fonts: {
         files: [
           // includes files within path
-          // {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'}
         ]
       }
