@@ -13,8 +13,8 @@ setup(
     version=__version__,
     url='https://github.com/roadiz/roadiz_rtd_theme/',
     license='MIT',
-    author='Julien Blanchet, Dave Snider',
-    author_email='julien@rezo-zero.com, dave.snider@gmail.com',
+    author='Julien Blanchet, Ambroise Maupate, Dave Snider',
+    author_email='julien@rezo-zero.com, ambroise@rezo-zero.com, dave.snider@gmail.com',
     description='Roadiz theme for Sphinx, 2014 version.',
     long_description=open('README.rst').read(),
     zip_safe=False,
@@ -24,7 +24,8 @@ setup(
         '*.html',
         'static/css/*.css',
         'static/js/*.js',
-        'static/font/*.*'
+        'static/font/*.*',
+        'static/img/*.*'
     ]},
     include_package_data=True,
     install_requires=open('requirements.txt').read().splitlines(),

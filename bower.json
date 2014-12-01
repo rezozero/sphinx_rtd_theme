@@ -4,6 +4,7 @@
   "homepage": "https://github.com/snide/wyrm",
   "authors": [
     "Julien Blanchet <julien@rezo-zero.com>",
+    "Ambroise Maupate <ambroise@rezo-zero.com>",
     "Dave Snider <dave.snider@gmail.com>"
   ],
   "description": "Sphinx theme for docs.roadiz.io.",

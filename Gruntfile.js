@@ -20,13 +20,19 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      fonts: {
-        files: [
-          // includes files within path
-          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'}
-        ]
-      }
+        fonts: {
+            files: [
+              // includes files within path
+              {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'},
+              {expand: true, flatten: true, src: ['fonts/*'], dest: 'roadiz_rtd_theme/static/fonts/', filter: 'isFile'}
+            ]
+        },
+        images: {
+          files: [
+            // includes files within path
+            {expand: true, flatten: true, src: ['img/*'], dest: 'roadiz_rtd_theme/static/img/', filter: 'isFile'},
+          ]
+        }
     },
 
     sass: {
@@ -68,7 +74,8 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["demo_docs/build"],
-      fonts: ["roadiz_rtd_theme/static/fonts"]
+      fonts: ["roadiz_rtd_theme/static/fonts"],
+      images: ["roadiz_rtd_theme/static/img"]
     },
 
     watch: {
@@ -100,6 +107,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
 
   grunt.registerTask('fonts', ['clean:fonts','copy:fonts']);
+  grunt.registerTask('images', ['clean:images','copy:images']);
   grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','exec:build_sphinx','connect','open','watch']);
   grunt.registerTask('build', ['exec:bower_update','clean:build','sass:build','exec:build_sphinx']);
 }
