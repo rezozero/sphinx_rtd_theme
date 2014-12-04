@@ -119,7 +119,10 @@
     </section>
 
   </div>
+
+  {% if not READTHEDOCS %}
   {% include "versions.html" %}
+  {% endif %}
 
   {% if not embedded %}
 
