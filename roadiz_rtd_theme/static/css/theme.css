@@ -2794,6 +2794,7 @@ button[disabled] {
 
 .wy-dropdown.wy-dropdown-left .wy-dropdown-menu {
   right: 0;
+  left: auto;
   text-align: right;
 }
 
@@ -3043,8 +3044,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 }
 input[type="text"][disabled], input[type="password"][disabled], input[type="email"][disabled], input[type="url"][disabled], input[type="date"][disabled], input[type="month"][disabled], input[type="time"][disabled], input[type="datetime"][disabled], input[type="datetime-local"][disabled], input[type="week"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="color"][disabled] {
   cursor: not-allowed;
-  background-color: #f3f6f6;
-  color: #cad2d3;
+  background-color: #fafafa;
 }
 
 input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
@@ -3097,9 +3097,11 @@ select:focus, textarea:focus {
 
 select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
   cursor: not-allowed;
-  background-color: #fff;
-  color: #cad2d3;
-  border-color: transparent;
+  background-color: #fafafa;
+}
+
+input[type="radio"][disabled], input[type="checkbox"][disabled] {
+  cursor: not-allowed;
 }
 
 .wy-checkbox, .wy-radio {
@@ -3943,6 +3945,10 @@ p, li, blockquote {
   font-size: 14px;
 }
 
+p {
+  margin: 1em 0;
+}
+
 .wy-breadcrumbs li {
   display: inline-block;
 }
@@ -4071,7 +4077,7 @@ p, li, blockquote {
 }
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
   color: #404040;
-  padding: 0.4045em 1.618em;
+  padding: 0.53933em 1.618em;
   font-weight: bold;
   position: relative;
   background: #fcfcfc;
@@ -4099,8 +4105,10 @@ p, li, blockquote {
 }
 .wy-menu-vertical li ul li a {
   margin-bottom: 0;
-  color: #b3b3b3;
+  color: #4d4d4d;
+  font-size: 94%;
   font-weight: normal;
+  padding: 0.53933em 1.618em;
 }
 .wy-menu-vertical a {
   display: inline-block;
@@ -4108,8 +4116,8 @@ p, li, blockquote {
   padding: 0.4045em 1.618em;
   display: block;
   position: relative;
-  font-size: 90%;
-  color: gray;
+  font-size: 100%;
+  color: #4d4d4d;
 }
 .wy-menu-vertical a:hover {
   background-color: #d6d6d6;
@@ -4541,7 +4549,7 @@ nav.stickynav {
   list-style: upper-alpha;
 }
 .rst-content .section ol p, .rst-content .section ul p {
-  margin-bottom: 12px;
+  margin: 0;
 }
 .rst-content .line-block {
   margin-left: 24px;
