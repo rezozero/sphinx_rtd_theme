@@ -4757,8 +4757,9 @@ span[id*='MathJax-Span'] {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-#rezozero-header .rezozero-header-link.fa-github, #rezozero-header .rezozero-header-link.icon-github {
-  font-size: 20px;
+#rezozero-header .rezozero-header-link.roadiz-icon-github {
+  font-size: 18px;
+  line-height: 45px;
 }
 
 @media screen and (max-width: 768px) {
