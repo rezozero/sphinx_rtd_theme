@@ -1,0 +1,118 @@
+#rezozero-header
+  position: fixed
+  background-color: #ebebeb
+  @include background-image(linear-gradient(top, #ebebeb 50%,#e3e3e3 100%))
+  z-index: 10
+  width: 100%
+  height: $header-height
+
+  color: #EEE
+  +box-sizing()
+
+  padding: 0px
+
+  .rezozero-title
+    display: inline-block
+    vertical-align: top
+    margin: 0
+    
+  #rezozero-title-link
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    font-size: 11px
+    line-height: $header-height
+    height: $header-height
+    text-transform: uppercase
+    font-weight: 600
+    width: 299px
+    +box-sizing()
+    color: #60707e
+    +transition(0.4s background ease-out)
+
+    &:hover
+      background: lighten(#c8c8c8, 17%)
+    
+    i
+      margin-right: 15px
+      color: #323232
+      font-size: 20px
+      font-weight: normal
+      line-height: $header-height
+
+  #rezozero-header-links-list
+    display: inline-block
+    margin: 0 30px 0 0
+    vertical-align: top
+
+  .rezozero-header-link-item
+    display: inline-block
+    vertical-align: top
+    position: relative
+    color: #c8c8c8
+    border-left: 1px solid #cccccc
+    font-weight: 600
+    +box-sizing()
+    +transition(0.4s background ease-out)
+
+    &.active
+      border-left-color: #fff
+      background: #fff
+      cursor: default
+
+      &:hover
+        background: #fff
+
+    &:hover
+      background: lighten(#c8c8c8, 17%)
+
+    &:last-child
+      border-right: none
+
+  .rezozero-header-link
+    display: block
+    color: #656565
+    padding: 0 20px
+    font-size: 11px
+    line-height: $header-height
+    height: $header-height
+    +box-sizing()
+    text-transform: uppercase
+    letter-spacing: 0.05em
+
+    &.fa-github
+      font-size: 20px
+
++media($tablet)
+  #rezozero-header
+    display: none
+
+  .wy-nav-content-wrap
+    padding-top: 0px
+
+
+#alpha-ribbon
+  position: fixed
+  top: 0 
+  right: 0 
+  width: 120px 
+  height: 120px
+  overflow: hidden
+  z-index: 12
+
+
+#alpha-ribbon-inner
+  position: relative
+  top: -31px 
+  right: -22px
+  width: 180px 
+  height: 25px
+  font-size: 11px 
+  line-height: 25px
+  text-align: center 
+  text-transform: uppercase
+  background: $menu-logo-color
+  color: #1a1a1a
+  font-weight: 600
+  @include transform(rotate(45deg))
+  @include transform-origin(0,0)

@@ -104,7 +104,7 @@ ul.fas li .fa-large:before {
   left: 0;
   width: 300px;
   color: #00a4d0;
-  background: #4d4d4d;
+  background: #eaeaea;
   border-top: solid 10px #F2F2F2;
   font-family: "RezoZero", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
@@ -118,7 +118,7 @@ ul.fas li .fa-large:before {
 }
 .rst-versions .rst-current-version {
   padding: 12px;
-  background-color: #575757;
+  background-color: #f4f4f4;
   display: block;
   text-align: right;
   font-size: 100%;
@@ -174,7 +174,7 @@ ul.fas li .fa-large:before {
 .rst-versions .rst-other-versions dd a {
   display: inline-block;
   padding: 6px;
-  color: #fcfcfc;
+  color: #fff;
 }
 .rst-versions.rst-badge {
   width: auto;
