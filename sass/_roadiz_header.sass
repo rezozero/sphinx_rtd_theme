@@ -12,6 +12,8 @@
   z-index: 990
   +box-sizing()
   letter-spacing: -0.09em
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
   .roadiz-title
     display: inline-block
@@ -19,6 +21,7 @@
     margin: 0
     
   #roadiz-title-link
+    position: relative
     display: inline-block
     vertical-align: top
     text-align: center
@@ -31,6 +34,7 @@
     color: #888
     padding-left: 17px
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9)
+    overflow: hidden
     +box-sizing()
     +transition(0.4s background ease-out)
 
@@ -46,6 +50,14 @@
 
       &:before
         line-height: $header-height
+  
+    display: inline-block
+
+  #roadiz-title-link-text
+    position: relative
+    display: inline-block
+    vertical-align: top
+    line-height: $header-height
 
 
   #roadiz-header-links-list

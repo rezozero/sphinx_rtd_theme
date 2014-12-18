@@ -4677,6 +4677,8 @@ span[id*='MathJax-Span'] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: -0.09em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 #roadiz-header .roadiz-title {
   display: inline-block;
@@ -4684,6 +4686,7 @@ span[id*='MathJax-Span'] {
   margin: 0;
 }
 #roadiz-header #roadiz-title-link {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -4696,6 +4699,7 @@ span[id*='MathJax-Span'] {
   color: #888;
   padding-left: 17px;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
+  overflow: hidden;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -4704,6 +4708,7 @@ span[id*='MathJax-Span'] {
   -moz-transition: 0.4s background ease-out;
   -o-transition: 0.4s background ease-out;
   transition: 0.4s background ease-out;
+  display: inline-block;
 }
 #roadiz-header #roadiz-title-link:hover {
   background: #f3f3f3;
@@ -4716,6 +4721,12 @@ span[id*='MathJax-Span'] {
   font-weight: normal;
 }
 #roadiz-header #roadiz-title-link .roadiz-icon-roadiz:before {
+  line-height: 45px;
+}
+#roadiz-header #roadiz-title-link-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   line-height: 45px;
 }
 #roadiz-header #roadiz-header-links-list {
