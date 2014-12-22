@@ -4809,6 +4809,11 @@ span[id*='MathJax-Span'] {
   z-index: 995;
 }
 
+@media screen and (max-width: 768px) {
+  #alpha-ribbon {
+    display: none;
+  }
+}
 #alpha-ribbon-inner {
   position: relative;
   top: -31px;
