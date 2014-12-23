@@ -1,6 +1,6 @@
 +font-face('RoadizSans', '#{$font-awesome-dir}roadizsans-light-webfont', 300, normal)
 +font-face('RoadizSans', '#{$font-awesome-dir}roadizsans-regular-webfont', normal, normal)
-+font-face('RoadisSans', '#{$font-awesome-dir}roadizsans-medium-webfont', bold, normal)
++font-face('RoadizSans', '#{$font-awesome-dir}roadizsans-medium-webfont', 600, normal)
 +font-face('RoadizSans Mono', '#{$font-awesome-dir}roadizsans-mono-webfont')
 
 .wy-affix
@@ -263,6 +263,8 @@ footer
     background: $menu-background-color
   .wy-nav-top
     display: block
+    line-height: 30px
+    +box-sizing()
   .wy-nav-side
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
@@ -270,6 +272,7 @@ footer
       right: -$nav-desktop-width
     &.shift
       width: 85%
+      top: 0px
       left: 0
   .wy-nav-content-wrap
     margin-left: 0
