@@ -58,6 +58,13 @@
         padding: $gutter / 2 $gutter * 1.5
         &:hover
           background: darken($section-background-color, 15%)
+      ul
+        li
+          ul
+            margin-left: 20px
+            li a
+              font-size: 11px
+
   // On state for the first level
   li.on a, li.current > a
     color: $text-color
@@ -75,7 +82,11 @@
   li.toctree-l2.current > a
     background: darken($section-background-color, 20%)
     padding: $gutter / 2 $gutter * 1.5
-  li.current ul
+  li.toctree-l3.current > a,
+  li.toctree-l4.current > a
+    background: #E6E6E6
+    padding: $gutter / 2 $gutter * 1.5
+  li.current > ul
     display: block
   li ul
     margin-bottom: 0
@@ -112,7 +123,7 @@
   padding: 1.7em
   display: block
   color: $section-background-color
-  margin-bottom: $gutter / 2
+  margin-bottom: 0
   input[type=text]
     width: 100%
     border-radius: 50px
