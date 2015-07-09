@@ -20,7 +20,7 @@
     text-align: right
     font-size: 100%
     cursor: pointer
-    color: $green
+    color: $link_color
     +clearfix
     .fa
       color: $menu-logo-color
@@ -34,6 +34,11 @@
     &.rst-active-old-version
       background-color: $yellow
       color: $black
+    .rst-current-version-title
+      display: none
+  &.shift-up
+    .rst-current-version-title
+      display: block
   &.shift-up .rst-other-versions
     display: block
   .rst-other-versions
@@ -47,14 +52,14 @@
       border: 0
       margin: 20px 0
       padding: 0
-      border-top: solid 1px lighten($menu-background-color, 5%)
+      border-top: solid 1px lighten($text-medium, 20%)
     dd
       display: inline-block
       margin: 0
       a
         display: inline-block
-        padding: $base-line-height / 4
-        color: $section-background-color
+        padding: $base-line-height / 4 0px
+        color: $link_color
   &.rst-badge
     width: auto
     bottom: 20px
@@ -70,13 +75,18 @@
       text-align: right
       .fa-book
         float: left
+        line-height: 30px
+      .rst-current-version-title
+        float: left
+        line-height: 30px
+        padding-left: 5px
       .icon-book
         float: left
     .rst-current-version
       width: auto
       height: 30px
       line-height: 30px
-      padding: 0 $base-line-height / 4
+      padding: 0 $base-line-height / 2
       display: block
       text-align: center
 
