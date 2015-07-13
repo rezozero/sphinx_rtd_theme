@@ -192,7 +192,12 @@
   // These are the "literals" that get spit out when you mark stuff as ``code`` as your write.
   tt
     @extend code
-    color: $black
+    color: rgba(0,0,0,0.55)
+    background-color: rgba(0, 0, 0, 0.05)
+    font-size: 12px
+    padding: 2px 2px
+    border: none
+
     big, em
       font-size: 100% !important
       line-height: normal
@@ -279,6 +284,8 @@
     margin-bottom: 12px
     font-weight: bold
 
+  div[class^='highlight']
+    background: #F9F9F9
 
   pre.literal-block,
   div[class^='highlight'] pre
