@@ -61,6 +61,23 @@
 
     .admonition-title
       background: $link-color
+
+  .topic
+    @extend .wy-alert
+    @extend .wy-alert.wy-alert-info
+    background: #f7f7f7
+    color: #222
+    .topic-title
+      @extend .wy-alert-title
+      @extend .fa
+      @extend .fa-info-circle
+      font-size: 120%
+      font-weight: bold
+      background: #a9a9a9
+      padding: 10px 12px
+      &:before
+        margin-right: 7px
+
   .hint, .tip, .important
     @extend .wy-alert.wy-alert-success
   .error, .danger
@@ -87,9 +104,6 @@
     margin-left: $base-line-height
 
   // Generics handling of headings and toc stuff.
-  .topic-title
-    font-weight: bold
-    margin-bottom: $base-line-height / 2
   .toc-backref
     color: $text-color
   .align-right
@@ -125,7 +139,7 @@
     margin: 0 0 $base-line-height $base-line-height
     padding: $base-line-height
     background: $table-stripe-color
-    border: solid 1px $table-border-color
+    //border: solid 1px $table-border-color
     // Sidebar content is usually less relevant, so adjust the margins and sizes.
     p, ul, dl
       font-size: 90%

@@ -14,5 +14,9 @@
     "grunt-exec": "~0.4.2",
     "grunt-open": "0.2.2",
     "matchdep": "~0.1.2"
+  },
+  "scripts": {
+      "build": "NODE_ENV=production grunt build",
+      "dev": "grunt"
   }
 }

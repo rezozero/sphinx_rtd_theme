@@ -61,6 +61,11 @@ API Test
 Optional parameter args
 -----------------------
 
+.. topic:: Source Edition
+
+    If you are using Roadiz *Source edition*, we configured *Git* versioning tool to ignore every additional theme you create in ``/themes`` folder.
+    So you can **initialize your a new git repository per custom theme you create.** That way you can use code versioning independently from Roadiz updates.
+
 At this point optional parameters `cannot be generated from code`_.
 However, some projects will manually do it, like so:
 
